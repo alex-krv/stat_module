@@ -1,0 +1,131 @@
+.b-store-statistics{
+	max-width: 70%;
+}
+.store-statistics__period{
+	font-size: 0;
+	margin-bottom: 15px;
+}
+.period-title, 
+.period-limit,
+.values-item-name,
+.values-item-index{
+	display: inline-block;
+	width: 45%;
+	vertical-align: middle;
+	box-sizing: border-box;
+}
+.period-title{
+	font-size: 20px;
+}
+.period-limit{
+	width: 50%;
+	font-size: 0;
+}
+.period-limit-from-wrapper,
+.period-limit-to-wrapper{
+	display: inline-block;
+	width: 50%;
+	vertical-align: middle;
+	box-sizing: border-box;
+}
+.values-item{
+	margin-bottom: 10px;
+	font-size: 0;
+}
+.values-item-name,
+.values-item-index{
+	font-size: 14px;
+}
+.values-item-index{
+	width: 55%;
+}
+.values-item-name{
+	width: 30%;
+}
+.period-btn-wrapper{
+	display: inline-block;
+	vertical-align: middle;
+	width: 20%;
+}
+.period-limit-from,
+.period-limit-to{
+	padding: 4px;
+	padding-left: 7px;
+	border-radius: 2px;
+	border: 1px solid #1c337e;
+	color: #1c337e;
+}
+.period-title{
+	margin-bottom: 20px;
+}
+.error-message{
+	margin-bottom: 10px;
+	color: red;
+}
+._hide{
+	opacity: 0;
+	visibility: hidden;
+}
+._visible{
+	opacity: 1;
+	visibility: visible;
+	transition: opacity 0.3s, visibility 0s linear 0.3s;;
+}
+.period-btn-wrapper input.period-btn-send:hover{
+	background: #454f79;
+}
+.period-title{
+	width: 100%;
+}
+.personal_wrapper input[type=submit].period-btn-send:last-of-type{
+	color: #fff !important;
+	background: #1c337e;
+	margin: 0 0 1px 0;
+}
+
+@media (max-width: 1024px){
+	.b-store-statistics{
+		max-width: 100%;
+	}
+	.period-limit,
+	.values-item-name,
+	.values-item-index{
+		width: auto;
+	}
+	.period-limit,
+	.values-item-name{
+		margin-right: 20px;
+	}
+	.period-limit-from-wrapper{
+		width: 40%;
+		margin-right: 27px;
+	}
+}
+/*--end media max-width 1024px--*/
+
+
+@media (max-width: 768px){
+	.b-store-statistics{
+		margin-top: 20px;
+	}
+}
+/*--end media max-width 766--*/
+
+@media (max-width: 480px){
+	.stat-period,
+	.period-limit,
+	.period-limit-from-wrapper,
+	.period-btn-wrapper{
+		text-align: center;
+		width: 100%;
+	}
+	.stat-period input{
+		margin-bottom: 15px;
+	}
+	.period-limit,
+	.period-limit-from-wrapper{
+		display: block;
+	}
+	
+}
+/*--end media max-width 480--*/

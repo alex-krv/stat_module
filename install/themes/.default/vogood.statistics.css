@@ -1,0 +1,60 @@
+.vo_menu_icon {
+    width: 28px;
+    height: 28px;
+    background:url(icons/vogood.statistics/pie-chart.png) no-repeat 0 0;
+    margin-right: 4px;
+}
+.vo_page_icon {
+    width: 28px;
+    height: 28px;
+    background:url(icons/vogood.statistics/pie-chart.png) no-repeat 0 0;
+}
+.stat-wrap{
+    margin-bottom: 30px;
+}
+.stat-elem{
+    position: relative;
+}
+.stat-wrap .elem-title{
+    position: relative;
+    padding: 10px 0 10px 35px;
+    border: 1px solid;
+    border-color: #d9e0e4 #89979d #919b9d #ebeef0;
+    background-color: #aebbc0;
+    background-image: linear-gradient(to bottom, #b9c7cd, #aab6b8);
+    vertical-align: middle;
+    font-weight: bold;
+    cursor: pointer;
+}
+.stat-wrap .stat-elem .elem-title:not(:last-child):after{
+    content: '';
+    position: absolute;
+    left: 9px;
+    top: 0; bottom: 0;
+    height: 16px;
+    width: 16px;
+    margin: auto 0;
+    background:url(icons/vogood.statistics/arrow-down.png) no-repeat 0 0;
+    -webkit-transition: transform ease .4s;
+    transition: transform ease .4s;
+}
+.stat-wrap .stat-elem .elem-title._active:not(:last-child):after{
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+.stat-wrap .stat-elem .content-list{
+    display: none;
+}
+.stat-wrap .stat-elem .content-list div{
+    padding: 8px;
+    border: none;
+    color: #000;
+    font-size: 13px;
+    text-align: left;
+    vertical-align: top;
+    background: #fff;
+}
+.stat-wrap .stat-elem .content-list div:nth-child(odd){
+    background-color: #f5f9f9;
+}
